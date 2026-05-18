@@ -166,7 +166,7 @@
     <h2>Cost</h2>
     <p>Cloudflare hosting is <strong>£0/month</strong> for everything up to roughly 100,000 requests/day and 10 GB of storage &ndash; we do not come close to that with current pilots. At small-pilot scale we are looking at <strong>£20&ndash;£40/month</strong>. If we end up running 20+ pilots in parallel it is <strong>£100&ndash;£200/month</strong>.</p>
     <p>The AI call costs (Claude critique, Whisper transcription) are roughly 30p per ten-minute interview critique. When the AI flows through a client&rsquo;s own cloud environment (BoE&rsquo;s Azure, Dole&rsquo;s AWS), those costs are billed to them against their existing cloud agreement (assuming they enable it as part of their internal hosting) &ndash; not to us.</p>
-    <p>The Cloudflare migration is estimated at 12&ndash;15 working days on a full-time-equivalent basis. The routing layer adds about 3 more. Fitted around my existing commitments rather than working on it full-time, that translates to roughly 3&ndash;4 weeks of calendar time, in parallel with the live Dole pilot, so no disruption to live users (assuming David is OK to roll out ARIA on our current Apps Script platform initially).</p>
+    <p>The Cloudflare migration is estimated at 12&ndash;15 working days on a full-time-equivalent basis. The routing layer adds about 3 more. Fitted around my existing commitments rather than working on it full-time, that translates to roughly 2&ndash;3 weeks of calendar time, in parallel with the live Dole pilot, so no disruption to live users (assuming David is OK to roll out ARIA on our current Apps Script platform initially).</p>
 
     <h2>The case for starting sooner</h2>
     <p>My preference is to start the Cloudflare migration sooner rather than later. Three reasons:</p>
@@ -199,7 +199,7 @@
         <div class="swot-label">Internal · negative</div>
         <div class="swot-title">Weaknesses</div>
         <ul>
-          <li>Roughly 15&ndash;18 working days of build before any user-visible benefit (12&ndash;15 days Cloudflare migration plus 3 for the routing layer).</li>
+          <li>Roughly 2&ndash;3 weeks of build effort before any user-visible benefit.</li>
           <li>New deployment platforms to learn. Apps Script is familiar; Cloudflare and the enterprise routing patterns are new ground (but learnable!).</li>
           <li>Existing code needs migrating cleanly. Any dropped row of code equals lost pilot work.</li>
           <li>We are still dependent on Anthropic and OpenAI being available on whichever cloud our client happens to use. Currently they are on both Azure and AWS, but that is their decision, not ours.</li>
@@ -219,7 +219,7 @@
           <li>Once the routing layer exists, future clients with strict compliance requirements (the ones that lock everything into their own cloud environment) are easier to win &ndash; we already speak their language.</li>
           <li>Plays well with the wider CEQ portfolio &ndash; every coaching tool we build can share the same hosting, authentication and analytics foundation.</li>
           <li>ARIA Max plus ARIA Mini gives us a two-tier product offering on a single codebase &ndash; full enterprise web app for desktop work, lightweight phone version for on-the-go practice and reminders. Appeals to clients who want both.</li>
-          <li>Pilot Charter KPIs feed directly into ARIA Insights &ndash; the dashboards become a paid add-on that reports each pilot&rsquo;s progress against its own agreed outcomes. Useful product, defensible commercial story.</li>
+          <li>Pilot Charter KPIs feed directly into ARIA Insights &ndash; the dashboards become a paid add-on that reports each pilot&rsquo;s progress against its own agreed outcomes.</li>
           <li>Platform investment is spread across every current and future pilot rather than charged to one client &ndash; stronger commercial narrative for the wider business.</li>
         </ul>
       </div>
